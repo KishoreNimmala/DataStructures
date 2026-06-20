@@ -1,10 +1,12 @@
+package com.ds.examples;
+
 import java.io.*;
 import java.util.*;
 
 public class Palindrome {
     // Write your code here.
-    Stack stack;
-    Queue queue;
+    Stack<Character> stack;
+    Queue<Character> queue;
     public Palindrome() {
 		stack=new Stack<>();
 		queue=new LinkedList<>();

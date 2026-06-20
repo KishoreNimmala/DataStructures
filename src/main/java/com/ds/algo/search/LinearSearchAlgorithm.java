@@ -1,6 +1,5 @@
 package com.ds.algo.search;
 
-import java.util.Arrays;
 
 public class LinearSearchAlgorithm {
 
