@@ -1,7 +1,9 @@
 package com.ds.examples;
 
-import java.io.*;
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
 
 public class Palindrome {
     // Write your code here.

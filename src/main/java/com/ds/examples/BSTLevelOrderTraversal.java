@@ -1,7 +1,8 @@
 package com.ds.examples;
 
-import java.util.*;
-import java.io.*;
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.Scanner;
 
 class BSTLevelOrderTraversal{
 
@@ -16,7 +17,7 @@ static class Node{
 
 static void levelOrder(Node root){
       if(root!=null) {
-            Queue<Node> nodes = new LinkedList<>();
+            Queue<Node> nodes = new LinkedList<Node>();
             nodes.add(root);
             while (!nodes.isEmpty()) {
                 Node node = nodes.remove();
@@ -49,13 +50,14 @@ public static Node insert(Node root,int data){
         }
     }
     public static void main(String args[]){
-            Scanner sc=new Scanner(System.in);
-            int T=sc.nextInt();
-            Node root=null;
-            while(T-->0){
-                int data=sc.nextInt();
-                root=insert(root,data);
+            try(Scanner sc=new Scanner(System.in)) {
+                int T=sc.nextInt();
+                Node root=null;
+                while(T-->0){
+                    int data=sc.nextInt();
+                    root=insert(root,data);
+                }
+                levelOrder(root);
             }
-            levelOrder(root);
         }	
 }
