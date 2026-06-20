@@ -10,5 +10,13 @@ public class LinearSearchAlgorithm {
         }
         return -1;
     }
+
+    public static int findTargetPosition(String[] arrs, String target){
+        for(int i=0; i<arrs.length ; i++){
+            if(arrs[i].equals(target))
+                return i;
+        }
+        return -1;
+    }
     
 }
