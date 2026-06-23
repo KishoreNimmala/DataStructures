@@ -67,7 +67,7 @@ public class SearchAlgoTest{
         };
 
         for (SearchTestCase testCase : cases) {
-            int result = BinarySearchAlgorithm.findTargetPosition(testCase.array, testCase.target);
+            int result = BinarySearch.findTargetPosition(testCase.array, testCase.target);
             assertEquals(
                 "Binary search failed for target " + testCase.target + " in array " + java.util.Arrays.toString(testCase.array),
                 testCase.expected,

@@ -1,6 +1,6 @@
 package com.ds.algo.search;
 
-public class BinarySearchAlgorithm {
+public class BinarySearch{
     
     public static int findTargetPosition(int[] arrs, int target){
         int left = 0;
